@@ -10,7 +10,7 @@ import Foundation
 /**
  Extends Date to be useable in other sources.
  */
-extension Date{
+extension Date {
     /**
      Converts date to a String with the given format.
      
@@ -18,11 +18,9 @@ extension Date{
      
       - Returns: converted date in to string.
      */
-    func toString( dateFormat format  : String ) -> String
-    {
+    func toString(dateFormat format: String ) -> String {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = format
         return dateFormatter.string(from: self)
     }
-
 }

@@ -7,16 +7,16 @@ excluded:
   - fastlane
 
 disabled_rules: # rule identifiers to exclude from running
-  - cyclomatic_complexity
   - trailing_whitespace
   - trailing_newline
 
 line_length: 150
 
-number_separator:
-  minimum_length: 5
+opt_in_rules:
+- number_separator:
+    minimum_length: 5
 
 cyclomatic_complexity:
-  warning: 5
-  error: 6
+  warning: 10
+  error: 12
 reporter: "xcode" # reporter type (xcode, json, csv, checkstyle)
